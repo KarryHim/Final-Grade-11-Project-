@@ -1,0 +1,18 @@
+FACT1 = "your and you're are homophones" 
+FACT2 = "people need skill to tell them apart"
+FACT3 = "english teachers stalk you if you don't"
+
+s = FACT2[12:17]	#s = everything in FACT2 from index 12 up to index 16.  Thus, s = "skill"
+k = s[1:]        		#k = everything in "skill" from index 1 until the end.  Thus, k = "kill"              
+y = FACT1[:4]		#y = everything in FACT1 from the beginning until index 3.  Thus, y = "your"
+i = FACT3[-12]            #i = the character in FACT3 that is 12th from the end.  Thus, i = "i"
+f = i + FACT1[-6:]       #FACT1[-6:] is the last 6 characters in FACT1. Thus, f = "i" + "phones" = "iphones"
+j = FACT3.find( "r" )   #The .find("r") command returns the index where "r" occurs in FACT3, so j = 14
+t1 = FACT3[j+ 4:j+8]  #t1 = everything in FACT3 from index 18 up to index 21 (one less than 22) = "talk"
+t2 = FACT2[18:20]
+print(t2.split()) #t2 = everything in FACT2 from index 18 up to index 19, so t2 = "to"
+p = FACT2[:6]	         #p = everything in FACT2 from the beginning until index 5.  Thus, p = "people"
+
+print( k, y, f )
+print( t1, t2, p )
+
